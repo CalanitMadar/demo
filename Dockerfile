@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 COPY target /app/target/
-RUN mv target/*.jar target/app.jar
+COPY target/*.jar /app/target/app.jar
 
 # Expose the port that your Spring Boot application runs on
 EXPOSE 8080
