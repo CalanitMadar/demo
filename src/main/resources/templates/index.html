@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful and Interactive Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #c8a2c8; /* לילך עתיק */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #c8a2c8; /* לילך עתיק */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .button-white {
+            background-color: white;
+            color: #c8a2c8; /* לילך עתיק */
+        }
+        footer {
+            background-color: #c8a2c8; /* לילך עתיק */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .login-register {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .login-register a {
+            margin: 0 10px;
+            color: white; /* לבן */
+        }
+        .actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+        .input-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+        .submit-button {
+            background-color: #c8a2c8; /* לילך עתיק */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            input[type="text"], textarea, .submit-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to Colorful Website</h1>
+    <p>Your Source for Vibrant Content</p>
+</header>
+<div class="container">
+    <div class="login-register">
+        <a href="#" class="button">Login</a>
+        <a href="#" class="button">Register</a>
+    </div>
+    <div class="content">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis suscipit velit.</p>
+    </div>
+    <div class="content">
+        <h2>Services</h2>
+        <p>We offer a wide range of services to meet your needs.</p>
+    </div>
+    <div class="actions">
+        <a href="#" class="button">My Appointments</a>
+        <a href="#" class="button">My Details</a>
+        <a href="#" class="button">Book an Appointment</a>
+        <a href="#" class="button">Cancel Appointment</a>
+    </div>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form action="/submit" method="post">
+            <div class="input-container">
+                <input type="text" placeholder="Your Name" name="name" required>
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Your Email" name="email" required>
+            </div>
+            <div class="input-container">
+                <textarea placeholder="Your Message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2023 Colorful Website. All rights reserved.</p>
+</footer>
+</body>
+</html>
